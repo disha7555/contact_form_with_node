@@ -8,9 +8,9 @@ app.use(express.json())
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
-const publicPath = path.join(__dirname, '../public')
+const publicPath = path.join(__dirname, '/public')
 console.log(publicPath);
-const publicDirPath=path.join(__dirname , '..' ,'public');
+const publicDirPath=path.join(__dirname ,'public');
 console.log(publicDirPath , 'success.html')
 app.use(express.static(publicPath));
 
